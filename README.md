@@ -216,16 +216,6 @@ GET /relatorios/alunos-ativos
 GET /relatorios/inadimplencias-pendentes
 ```
 
-## Como explicar o projeto ao professor
-
-1. O `model` representa as tabelas do banco.
-2. O `repository` faz a comunicação com o banco usando Spring Data JPA.
-3. O `service` concentra as regras de negócio.
-4. O `controller` recebe as requisições HTTP e chama o service.
-5. Os `dto` são usados para entrada e saída de dados, evitando expor diretamente as entidades.
-6. O MySQL possui triggers, procedure, function, views e índices para atender à proposta da disciplina.
-7. O check-in foi removido para reduzir a complexidade e focar no fluxo principal: aluno → plano → matrícula → pagamento → inadimplência.
-
 ## Frontend simples
 
 O projeto também possui um frontend simples usando apenas:
